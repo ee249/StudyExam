@@ -1,0 +1,72 @@
+[ 반복구문 ]
+for : 미리 반복횟수를 알고 있거나 어떠한 값의 변화를 주면서 반복하려는 경우
+while : 조건이 만족되는 동안 반복하려는 경우
+
+for(초기식:조건식:증감식)
+   반복문장
+
+for(;조건식;)
+   반복문장
+
+while(조건식)
+   반복문장
+
+for(변수의선언 및 초기화;반복횟수를 결정할 조건식;변수의 값을 변화시키는식)
+
+for(;;) ---> 무한루프 // 3개의 식 다 생략 가능하지만 세미콜론은 생략 불가 
+
+for(int i=1; i<10; i++) // 참이면 수행, 거짓이면 수행 하지 않는다. 
+    반복문장  	
+
+for(int num=1; num <= 9; num++) 
+	system.out.println(5*num+" ");   
+
+for(int n=5;n > 0; n--)
+	system.out.println(n);
+
+  방         값
+l-value = r-value
+변수      식        // l-value와 r-value가 타입이 다르면 형변환을 해야한다.
+
+double    int      (o)
+long       char    (o)
+int         (int)double // double 앞에 강제 형변환을 해야 한다.
+char       (char)int    // 
+- 자동 형 변환
+  (1) 정수에서 실수  // 우선순위가 가장 높다.
+  (2) 사이즈 적은 타입에서 큰 타입으로
+
+ v1 + v2
+ int   int  --> int
+ long long --> long
+ float float --> float	
+ int  double -->double
+ int  char   ---> int
+ int  long  --> long
+ long float --> float
+
+ char char --> int // why? int보다 방의 크기가 적으면 연산할 때 무조건 int로 바꿔서 연산한다.
+ short short --> int 
+
+- 중첩된 for 문 : 구구단
+
+\t - 줄맞춤
+final = 변수 앞에 final이 있으면 값을 한 번만 넣을 수 있다.(7장참고)
+
+for : 횟수에 반복. 값의 변화에 따른 반복
+
+for(초기식:조건식:증감식)
+    반복문장:
+
+while : 조건에 따른 반복
+
+초기식;
+while(조건식){
+     반복문장;
+     증감식;
+}
+
+반복문에서 변수 선언하는 것은 최대한 하지 말아야 한다.
+
+
+ 
