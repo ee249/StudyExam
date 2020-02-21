@@ -1,4 +1,4 @@
-#### 게시판 만들기(select 부분)
+#### 게시판 만들기(search 부분)
 
 ※ Hashmap 이용(News 게시판)
 
